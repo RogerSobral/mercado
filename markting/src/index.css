@@ -1,0 +1,80 @@
+/* src/index.css */
+
+/* Reset básico para margens e paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  background-color: #f8f9fa; /* Cor de fundo clara */
+  color: #333; /* Cor do texto */
+  line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Estilo para links */
+a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #007bff; /* Cor padrão dos links */
+}
+
+a:hover {
+  text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Estilo para botões */
+button {
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+/* Estilo para listas */
+ul {
+  list-style-type: none; /* Remove marcadores de lista */
+  padding: 0; /* Remove padding padrão */
+}
+
+/* Estilo para formulários */
+input, textarea, select {
+  font-family: inherit; /* Usa a mesma fonte do corpo */
+  font-size: 16px; /* Tamanho da fonte */
+  padding: 8px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda padrão */
+  border-radius: 4px; /* Cantos arredondados */
+  margin-bottom: 10px; /* Espaçamento entre inputs */
+  width: 100%; /* Largura total */
+}
+
+/* Estilo para botões personalizados */
+.custom-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+.custom-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Estilo para cabeçalhos */
+h1, h2, h3 {
+  margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilo para containers */
+.container {
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 20px; /* Espaçamento interno */
+}

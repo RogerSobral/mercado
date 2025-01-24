@@ -4,14 +4,67 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #e2e2e2;
 }
 
-.login-form {
-  background: white;
+
+/* Configurando O forme do login */
+form {
+  background: rgb(253, 253, 253);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: auto; /* Centraliza o formulário */
+}
+
+/* Para telas grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+  form {
+    width: 40%; /* Formulário menor em telas maiores */
+  }
+  button{
+    width: 55%;
+  }
+}
+
+/* Para tablets (entre 768px e 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  form {
+    width: 60%; /* Formulário ocupa mais espaço */
+    padding: 15px; /* Reduz um pouco o padding */
+  }
+
+  button{
+    width: 60%;
+  }
+}
+
+/* Para smartphones grandes (entre 576px e 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  form {
+    width: 80%; /* Formulário ocupa quase toda a largura */
+    padding: 10px; /* Padding reduzido */
+  }
+  button{
+    width: 70%;
+  }
+}
+
+/* Para smartphones pequenos (abaixo de 576px) */
+@media (max-width: 575px) {
+  form {
+    width: 90%; /* Quase 100% da tela */
+    padding: 10px;
+    border-radius: 5px; /* Bordas mais suaves */
+  }
+  button{
+    width: 100%;
+  }
+ 
 }
 
 .input-field {

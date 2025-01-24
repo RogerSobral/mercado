@@ -5,6 +5,7 @@ import Produtos from './Produtos';
 import Fornecedores from './Fornecedores';
 import Compras from './Compras';
 import Relatorios from './Relatorios';
+import LoginForm from './LoginForm'
 import './MenuPrincipal.css'; // Importando o CSS para estilização
 
 const MenuPrincipal = () => {
@@ -25,6 +26,9 @@ const MenuPrincipal = () => {
             <li>
               <Link to="/relatorios">Relatórios</Link>
             </li>
+            <li>
+            <Link>Sair</Link>
+            </li>
           </ul>
         </nav>
         <div className="content">
@@ -33,6 +37,7 @@ const MenuPrincipal = () => {
             <Route path="/fornecedores" element={<Fornecedores />} />
             <Route path="/compras" element={<Compras />} />
             <Route path="/relatorios" element={<Relatorios />} />
+            
             <Route path="/" element={<Produtos />} /> {/* Página padrão */}
           </Routes>
         </div>

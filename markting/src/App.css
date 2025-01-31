@@ -4,13 +4,14 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #e2e2e2;
+ 
+  background-color: #ccddee;
 }
 
 
 /* Configurando O forme do login */
 form {
-  background: rgb(253, 253, 253);
+  background: #f7faff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

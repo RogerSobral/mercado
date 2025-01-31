@@ -1,36 +1,40 @@
-/* src/components/MenuPrincipal.css */
 .menu-principal {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .sidebar {
-    width: 200px;
-    background-color: #343a40;
-    color: white;
-    padding: 20px;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    margin: 15px 0;
-  }
-  
-  .sidebar a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .sidebar a:hover {
-    text-decoration: underline;
-  }
-  
-  .content {
-    flex: 1;
-    padding: 20px;
-    background-color: #f8f9fa;
-  }
+  display: flex;
+}
+
+.sidebar {
+  display: none; /* Esconde o sidebar por padrão */
+  flex-direction: column;
+  background-color: #333;
+  color: white;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* Esconde o sidebar fora da tela */
+}
+
+.sidebar.open {
+  display: flex; /* Mostra o sidebar quando aberto */
+  transform: translateX(0); /* Move o sidebar para a tela */
+}
+
+.sidebar-toggle {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Para garantir que o botão fique acima do sidebar */
+}
+
+.content {
+  margin-left: 220px; /* Espaço para o sidebar */
+  padding: 20px;
+  flex-grow: 1;
+}
